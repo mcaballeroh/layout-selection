@@ -1,0 +1,23 @@
+<section class="hero">
+  <h1>This is the NG6 starter</h1>
+  <h3>You can find me inside {{ $ctrl.name }}.html</h3>
+  <div style="display: flex; flex-direction: row; flex-wrap: wrap; height: 200px;">
+
+    <div ng-repeat="template in $ctrl.templates" style="height: 100%; flex: 1; padding: 10px;">
+      <div id="{{template.name}}"
+      ng-include="template.file"
+      ng-click="$ctrl.cl(template.name)"
+      ng-class="{'tempSelected' : ($ctrl.selectedTemp === template.name)}"
+      style="height: 80%;">
+      </div>
+      <label ng-bind="'name : ' + template.name"></label>
+    </div>
+
+</section>
+
+<style>
+  .tempSelected {
+    border: 2px solid;
+    border-color: red;
+  }
+</style>

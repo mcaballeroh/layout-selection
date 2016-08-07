@@ -1,1 +1,2 @@
-based in  angularclass/NG6-starter](https://gitter.im/angularclass/NG6-starter) seed
+based in  angularclass/NG6-starter seed
+(https://gitter.im/angularclass/NG6-starter)
